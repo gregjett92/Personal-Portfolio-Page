@@ -6,6 +6,8 @@ body {
   min-height: 110vh;
   background-color: #4ca1af;
   background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%);
+
+  text-align: center;
 }
 
 h1 {
@@ -114,4 +116,50 @@ h1 {
   header video {
     display: none;
   }
+}
+
+/* =========== Footer ============== */
+
+.footer {
+  /* background: #222; */
+  text-align: center;
+  font-size: 100%;
+  /* margin: 2em; */
+  font-family: Calibri, arial, sans-serif;
+}
+
+.to-top {
+  color: white;
+  padding-top: 1.8em;
+  display: inline-block; /* or block */
+  position: relative;
+  border-color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  font-size: 150%;
+  margin: 2em;
+  font-family: Calibri, arial, sans-serif;
+}
+.to-top:before {
+  content: "▲";
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em white;
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+.to-top:hover {
+  color: black;
+  border-color: black;
+}
+.to-top:hover:before {
+  transform: rotate(360deg);
 }
