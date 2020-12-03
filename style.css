@@ -59,6 +59,29 @@ h1 {
   height: 100%;
 }
 
+/* ======== Button ======== */
+button {
+  position: absolute;
+  top: 200%;
+  /* left: 50%; */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-color: #f44336;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red;
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* ======== arrow ======== */
+
 /* =================== Navbar =================== */
 
 .navbar {
@@ -97,25 +120,6 @@ h1 {
 
 .navbar.active .navbar-brand {
   color: #555;
-}
-
-/*================ Change navbar styling on small viewports =============== */
-@media (max-width: 991.98px) {
-  .navbar {
-    background: #fff;
-  }
-
-  .navbar .navbar-brand,
-  .navbar .nav-link {
-    color: #555;
-  }
-}
-
-/* =========== Video Doesnt Display ============== */
-@media (pointer: coarse) and (hover: none) {
-  header video {
-    display: none;
-  }
 }
 
 /* =========== Footer ============== */
@@ -163,3 +167,22 @@ h1 {
 .to-top:hover:before {
   transform: rotate(360deg);
 }
+
+/*================ Change navbar styling on small viewports =============== */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #555;
+  }
+}
+
+/* =========== Video Doesnt Display ============== */
+/* @media (pointer: coarse) and (hover: none) {
+  header video {
+    display: none;
+  }
+} */
