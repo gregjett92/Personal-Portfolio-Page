@@ -1,131 +1,116 @@
-* {
-  margin: 0;
-  padding: 0;
+html,
+body {
+  height: 100%;
 }
 
 body {
-  color: #fff;
-  background-color: #021417;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.c-header {
-  display: block;
-  width: 100%;
-}
-
-.u-a5 {
-  font-family: Arial;
-  font-size: 37px;
-  line-height: 35px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  color: #fff;
-}
-
-.u-b4 {
-  font-family: Arial;
-  font-size: 12px;
-  line-height: 17px;
-  letter-spacing: 0.3px;
-  font-weight: normal;
-  color: #fff;
-}
-
-a {
-  text-decoration: none;
-}
-
-.u-media-wrapper {
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  height: 0;
-}
-
-.u-media-wrapper.u-media-wrapper--16-9 {
-  padding-bottom: 56.25%;
-}
-
-.c-gradient-overlay {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(circle at 49% 50%, rgba(2, 21, 25, 0.3), rgba(2, 21, 25, 0.6));
-}
-
-.c-mouse-vertical-carousel {
-  position: relative;
+  background: #001d38;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
 
-.c-mouse-vertical-carousel__list {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  z-index: 1;
-}
-
-.c-mouse-vertical-carousel__list-item a {
-  display: block;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  padding-left: 54.16667%;
-}
-
-.c-mouse-vertical-carousel__eyebrow {
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.c-mouse-vertical-carousel__eyebrow span {
-  position: absolute;
-  left: -30px;
-  top: 2px;
-}
-
-.c-mouse-vertical-carousel__title {
-  max-width: 450px;
-}
-
-.c-mouse-vertical-carousel__bg-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  will-change: transform;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 55em;
+}
+
+.wrapper > .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 1em;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  border-radius: 0.5em;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card > img {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  display: block;
+  width: 17.5em;
+}
+
+.card > .content {
+  background: #0a2640;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 1em;
+  text-align: center;
+}
+
+.card > .content > h1,
+.card > .content > h3 {
+  margin: 0.35em 0;
+}
+
+.card > .content > h1 {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.card > .content > h3 {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.map {
+  margin-top: 1em;
+}
+
+.map > button {
+  all: unset;
+  background: #11406c;
+  cursor: pointer;
+  margin: 0 0.125em;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+}
+
+.map > button.active:after {
+  background: #001d38;
+  content: "";
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 100%;
+  height: 0.5em;
+  width: 0.5em;
 }
 /*# sourceMappingURL=sass.css.map */
